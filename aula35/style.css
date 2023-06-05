@@ -3,3 +3,58 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+html, body{
+    height: 100vh;
+}
+
+body {
+    background: url(img/minecraft-fundo.jpg) no-repeat center top /cover;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+div#axolote {
+    background: url(img/minecraft-fundo-agua-caverna-1.jpg);
+}
+
+div.caverna, #botao {
+    border-radius: 5px;
+    border: 3px solid rgb(126, 66, 47);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.432);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 80px;
+    height: 52px;
+}
+
+.escolhido {
+    scale: 1.2;
+}
+
+#botao {
+    margin: 50px;
+    font-size: 30px;
+    width: initial;
+    height: initial;
+    padding: 10px;
+    outline: none;
+    background-color: rgba(64, 64, 180, 0.719);
+}
+
+#botao:hover {
+    background-color: rgba(64, 64, 180, 0.918);
+    
+}
+
+div#local-vazio {
+    background: url(img/minecraft-fundo-agua-caverna-2.jpg);
+}
