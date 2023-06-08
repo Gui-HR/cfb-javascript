@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17c69b;
+    display: flex; 
+    padding: 100px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#comandos {
+    justify-content: center;
+    gap: 15px;
+}
+
+#nome-animal-novo {
+    text-align: center;
+    font-weight: 700px;
+    font-size: 20px;
+}
+
+.texto-animal-novo {
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+    font-weight: 700px;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.grande {
+    border: 3px solid #00755c;
+    background-color: #00c16c;
+    width: 300px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.grande, .animal, .botao {
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.animal, .botao {
+    background-color: #004443;
+    border: 3px solid #002e34;
+    height: 50px;
+    width: 250px;
+    font-weight: 700px;
+    font-size: 20px;
+    color: rgb(226, 226, 226);
+    justify-content: space-around;
+}
+
