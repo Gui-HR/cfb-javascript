@@ -2,33 +2,40 @@ var selecionar = document.querySelector('#selecionar')
 var remover = document.querySelector('#remover')
 var adicionar = document.querySelector('#adicionar')
 
-function selecionado() {
-    const todosAnimais = [...document.querySelectorAll('.animal')]
-    var animalSelecionado = todosAnimais.filter((animal) => {
-        return animal.checked
+var tirarSelecao = () => {
+    const selecionadoRemove = [...document.querySelectorAll('.selecionado')]
+    selecionadoRemove.map((selecionado) => {
+        selecionado.classList.remove('selecionado')
     })
-    return animalSelecionado[0]
 }
 
+var selecao = [...document.querySelectorAll('.animal')]
+selecao.map((animal) => {
+    animal.addEventListener('click', (animal) => {
+        tirarSelecao()
+        animal.target.classList.toggle('selecionado')
+    })
+})
+
 selecionar.addEventListener('click', () => {
-    let animalEscolhido = selecionado()
+    let animalEscolhido = document.querySelector('.selecionado')
 
     if(animalEscolhido == undefined){
         alert('Selecione uma opção')
     } else {
-        const animalAlerta = animalEscolhido.previousSibling.previousSibling.textContent
+        const animalAlerta = animalEscolhido.textContent
         alert("O animal selecionado foi: " + animalAlerta)
     }
 
 })
 
 remover.addEventListener('click', () => {
-    let animalEscolhido = selecionado()
+    let animalEscolhido = document.querySelector('.selecionado')
 
     if(animalEscolhido == undefined){
         alert('Selecione uma opção')
     } else {
-        animalEscolhido.parentNode.remove()
+        animalEscolhido.remove()
     }
 })
 
@@ -42,8 +49,12 @@ adicionar.addEventListener('click', () => {
             let animais = document.querySelector('#animais')
             
             let novoAnimal = document.createElement('div')
-            novoAnimal.setAttribute('class', 'radio')
+            novoAnimal.setAttribute('class', 'animal')
             novoAnimal.innerHTML = '<p>'+ nomeAnimalNovo +'</p>'
+            novoAnimal.addEventListener('click', (animal) => {
+            tirarSelecao()
+                animal.target.classList.toggle('selecionado')
+            })
     
             animais.appendChild(novoAnimal) 
         } else {
