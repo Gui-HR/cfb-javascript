@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div {
+    background-color: #bcebdf;
+    border: 5px solid #ade0db;
+    width:650px;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#botao {
+    background-color: #ebf2f2;
+    border: 5px solid #d9dbdb;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#texto-pesquisa {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* 
+#d9dbdb
+#ade0db
+#bcebdf
+#d0f2e7
+#ebf2f2
+ */
