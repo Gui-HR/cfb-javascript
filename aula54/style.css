@@ -1,0 +1,89 @@
+/* 
+#34344e
+#3a415a
+#566981
+#89a7b1
+#cbdad5 
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    background-color: #89a7b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#calculadora {
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #3a415a;
+    background-color: #566981;
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#campos {
+    margin-left: 50px;
+}
+
+.campo {
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#numero1 {
+    margin-left: 3px;
+}
+
+#res {
+    text-align: center;
+    width: 150px; 
+    background-color: #bdbdbd;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #34344e;
+}
+
+#operacoes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#operacoes p {
+    border: 3px solid #34344e;
+    background-color: #cbdad5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#operacoes p:hover {
+    border: 3px solid #22222e;
+    background-color: #bdbdbd;
+}
+
