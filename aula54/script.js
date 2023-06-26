@@ -1,18 +1,22 @@
-const numero1 = document.querySelector('#numero1')
-const numero2 = document.querySelector('#numero2')
-const resultado = document.querySelector('#resultado')
-const adicao = document.querySelector('#adicao')
-const subtracao = document.querySelector('#subtracao')
-const multiplicacao = document.querySelector('#multiplicacao')
-const divisao = document.querySelector('#divisao')
+const caixa = document.querySelector('#caixa')
 
-const funcoes = [
-    () => {resultado.innerHTML = Number(numero1.value) + Number(numero2.value)},
-    () => {resultado.innerHTML = Number(numero1.value) - Number(numero2.value)},
-    () => {resultado.innerHTML = Number(numero1.value) * Number(numero2.value)},
-    () => {resultado.innerHTML = Number(numero1.value) / Number(numero2.value)}]
+var mapinha = new Map()
+mapinha.set('Caminho', 'Rua Churusbago')
+mapinha.set('Ovinho', 'Richarlyson')
 
-adicao.addEventListener('click', funcoes[0])
-subtracao.addEventListener('click', funcoes[1])
-multiplicacao.addEventListener('click', funcoes[2])
-divisao.addEventListener('click', funcoes[3])
+console.log(mapinha);
+
+if(mapinha.has('Ovinho')) {
+    caixa.innerHTML = mapinha.get('Ovinho') + ' esta vivo'
+} else {
+    caixa.innerHTML = 'você perdeu seu ovo F'
+}
+
+console.log(mapinha.size);
+
+mapinha.delete('Caminho')
+
+console.log(mapinha);
+
+console.log(mapinha.size);
+
