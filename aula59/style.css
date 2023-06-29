@@ -43,8 +43,14 @@ input, button{
     border: 3px solid #635274;
     background-color: #a7dbab;
     border-radius: 8px;
-    min-width: 500px;
+    min-width: 300px;
     min-height: 40px;
+    color: #512b52;
+    padding: 10px;
+}
+
+#bottom-line {
+    border-bottom: 2px solid #635274;
 }
 
 /* 

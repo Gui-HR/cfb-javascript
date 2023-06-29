@@ -15,6 +15,9 @@ const players = []
 
 button.addEventListener('click', () => {
     players.push(new Player(nicknamePlayer.value, classPlayer.value))
-    console.log(players);
 
+    let newplayer = document.createElement("p")
+    newplayer.innerHTML = `Name: ${nicknamePlayer.value} Class: ${classPlayer.value}`
+    newPlayers.appendChild(newplayer)
+    newplayer.setAttribute('id', 'bottom-line')
 })
